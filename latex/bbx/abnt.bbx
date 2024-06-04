@@ -1020,6 +1020,7 @@
 }%
 % <<<2
 
+% This removes <> in URLs according to abnt-6023:2018
 \DeclareFieldFormat{url}{\bibstring{urlfrom}\addcolon\addspace\url{#1}}%
 \DeclareFieldFormat{urldate}{\bibstring{urlseen}\addcolon\addspace #1}%
 
@@ -1516,10 +1517,6 @@
 }%% <<<
 
 \DeclareFieldFormat{illustrated}{\addspace #1\isdot}%
-
-% remove <> in URLs according to abnt-6023:2018
-\DeclareFieldFormat{url}{\textmainlang{\bibstring{urlfrom}\addcolon\addspace \url{#1}}}
-\DeclareFieldFormat{urldate}{\textmainlang{\bibstring{urlseen}\addcolon\addspace #1}}%
 
 \DeclareFieldFormat*{note}{\addspace #1}%
 
